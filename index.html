@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="calculatrice">
+        <div class="title">
+            <h3>calc</h3>
+            <div class="numbers-box-switch">
+                <h6>THEME</h6>
+                <div>
+                    <div class="numbers">
+                        <h6>1</h6>
+                        <h6>2</h6>
+                        <h6>3</h6>
+                    </div>
+                    <div class="box-switch"><i id="icon" class="fa-solid fa-circle"></i></div>
+                </div>
+            </div>
+
+
+        </div>
+        <input id ="display"  type="text" readonly />
+      
+        
+        <div id="keys">
+            <div id="numbers-to-calculate">
+
+                <button onclick="clickToDisplay('7')"> 7</button>
+                <button  onclick="clickToDisplay('8')"> 8</button>
+                <button  onclick="clickToDisplay('9')"> 9</button>
+                <button id="del-btn" onclick="deleteDisplay()">Del</button>
+    
+    
+    
+    
+                <button  onclick="clickToDisplay('4')"> 4</button>
+                <button  onclick="clickToDisplay('5')"> 5</button>
+                <button  onclick="clickToDisplay('6')">6</button>
+                <button  onclick="getOperator('+')">+</button>
+    
+    
+                <button  onclick="clickToDisplay('1')">1</button>
+                <button  onclick="clickToDisplay('2')">2</button>
+                <button  onclick="clickToDisplay('3')">3</button>
+                <button  onclick="getOperator('-')"> -</button>
+    
+    
+                <button  onclick="clickToDisplay('.')">.</button>
+                <button  onclick="clickToDisplay('0')"> 0</button>
+                <button  onclick="getOperator('/')">/</button>
+                <button  onclick="getOperator('*')">X</button>
+    
+    
+               
+    
+    
+    
+    
+    
+            </div>
+            <div class="last-row"> <button onclick="clearAll()"  id="reset-btn">RESET</button>
+                <button onclick="calculate()" id="equal-btn"> =</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
