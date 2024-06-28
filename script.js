@@ -46,7 +46,7 @@ function getOperator(op) {
         calculate(); // If already have an operation, calculate first
     }
     operation = op;
-    display.value = "";
+    display.value += op;
 }
 
 
@@ -68,22 +68,7 @@ display.value = display.value.toString().slice(0,-1);
 
 
 
-/*function calculate(){
-if(operation == '+'){
-    result= num1 + num2
-    display.value = result
-}else if (operation == '-'){
-    result = num1 - num2
-    display.value = result
-}else if(operation == '*'){
-    result = num1 * num2
-    display.value = result
-}else if(operation == '/'){
-    result = num1 / num2
-    display.value = result
-}
-   
-}*/
+
 
 function calculate() {
     if (!operation) return;
