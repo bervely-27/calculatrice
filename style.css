@@ -194,6 +194,12 @@ button :active{
         align-items: center;
         justify-content: center;
     }
+    #display{
+        width:100%
+    }
+    #keys{
+        width:100%
+    }
 }
 
 
