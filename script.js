@@ -27,12 +27,17 @@ let display = document.getElementById('display');
    
   }*/
     function clickToDisplay(num) {
-        if (operation) {
-            num2 = parseFloat(display.value + num);
-        } else {
-            num1 = parseFloat(display.value + num);
-        }
         display.value += num;
+
+        if (operation) {
+            console.log(display.value.split(operation))
+            
+            num2 = parseFloat(display.value.split(operation)[1]);
+        } else {
+            num1 = parseFloat(display.value);
+        }
+        console.log(display.value, 'display.value',num2, 'num2', num1, 'num1')
+
     }
 
 
@@ -72,8 +77,7 @@ display.value = display.value.toString().slice(0,-1);
 
 function calculate() {
     if (!operation) return;
-
-    num2 = parseFloat(display.value);
+    console.log({operation, num1, num2})
 
     if (operation == '+') {
         result = num1 + num2;
