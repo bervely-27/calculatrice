@@ -37,6 +37,7 @@ body{
    /* justify-content: space-between; */
    cursor: pointer;
    gap: 20px;
+   overflow: hidden;
 }
 .numbers{
     display: flex;
